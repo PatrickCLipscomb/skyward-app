@@ -5,7 +5,7 @@ import Article from '../components/Article';
 const Articles = (props) => (
   <div className="Articles">
     {
-      props.articles.map((article, index) => <Article data={article} key={article.id} />)
+      props.articles.map((article, index) => <Article article={article} key={article.id} />)
     }
   </div>
 );
