@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
 import Articles from './containers/Articles';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Loader from './components/Loader';
 import Api from './services/HackerNewsService.js';
+import './App.scss';
 
 class App extends Component {
   state = {

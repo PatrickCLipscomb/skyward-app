@@ -1,0 +1,82 @@
+.app {
+  text-align: center;
+}
+
+.app-logo {
+  animation: app-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.app-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.app-link {
+  color: #61dafb;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (max-width: 768px){
+    display: block;
+  }
+}
+
+.article {
+  width: 200px;
+  display: inline-block;
+  margin: 15px 10px;
+
+  @media (max-width: 768px){
+    display: flex;
+    padding: 10px;
+    width: auto;
+    background-color: #D8D8D8;
+    margin: 0;
+    border-bottom: 2px solid #979797;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .meta-wrapper {
+    @media (max-width: 768px){
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  .meta {
+    margin-bottom: 4px;
+  }
+
+  .primary {
+    font-size: 14px;
+    @media (max-width: 768px){
+      font-size: 18px;
+    }
+  }
+
+  .secondary {
+    color: #888888;
+    font-size: 12px;
+    @media (max-width: 768px){
+      font-size: 18px;
+    }
+  }
+}

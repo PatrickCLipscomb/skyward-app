@@ -31,18 +31,22 @@ class Articles extends Component {
   render() {
     this.props.articles.forEach((article) => console.log(article.score))
     return (
-      <div className="Articles">
-        <select id="lang" onChange={this.handleChange} value={this.state.sortMethod}>
-            <option value="time">Time</option>
-            <option value="score">Score</option>
-            <option value="author">Author</option>
-        </select>
-        {
-          this.props.articles
-            .slice(this.state.page[0], this.state.page[1])
-            .map((article, index) => <Article article={article} key={index} />)
-        }
-      </div>
+      <>
+        <div>
+          <select id="lang" onChange={this.handleChange} value={this.state.sortMethod}>
+              <option value="time">Time</option>
+              <option value="score">Score</option>
+              <option value="by">Author</option>
+          </select>
+        </div>
+        <div className="articles">
+          {
+            this.props.articles
+              .slice(this.state.page[0], this.state.page[1])
+              .map((article, index) => <Article article={article} key={index} />)
+          }
+        </div>
+      </>
     )
   }
 }
