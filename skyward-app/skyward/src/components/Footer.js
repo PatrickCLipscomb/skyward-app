@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 const Footer = (props) => (
   <div className="footer">
-    <button onClick={() => props.paginate('prev')} disabled={props.pagination === 0}>Previous</button>
-    <button onClick={() => props.paginate('next')}>Next</button>
+    <button onClick={() => props.paginate('prev')} disabled={props.pagination === 1 || props.loading}>Previous</button>
+    <button onClick={() => props.paginate('next')} disabled={props.pagination === 20 || props.loading}>Next</button>
   </div>
 );
 

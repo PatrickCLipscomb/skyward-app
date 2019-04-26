@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Article = (props) => (
   <div className="article">
-    {props.article.title}
+    {props.article.score} || {props.article.title}  
   </div>
 );
 

@@ -11,8 +11,9 @@ class App extends Component {
   state = {
     loading: false,
     articles: [],
-    pagination: 0,
-    articleIds: []
+    pagination: 1,
+    articleIds: [],
+    sortMethod: 'time'
   }
   
   async componentDidMount() {
@@ -20,7 +21,9 @@ class App extends Component {
     const articleIds = await Api.fetchNewStoryIDs();
     this.setState({articleIds}, async () => {
       const articles = await this.loadNewArticles();
-      this.setState({articles})
+      this.setState({articles}, () => {
+        this.sortArticles(this.state.sortMethod)
+      })
       console.log(articles)
     })  
   }
@@ -28,9 +31,25 @@ class App extends Component {
   paginate = async (direction) => {
     const pageNumber = direction === 'next' ? this.state.pagination + 1 : this.state.pagination - 1
     this.setState({pagination: pageNumber}, async () => {
-      const articles = await this.loadNewArticles();
-      this.setState({articles})
+      if (this.shouldLoadMore(direction)) {
+        let articles = await this.loadNewArticles();
+        articles.sort((a, b) => a[this.state.sortMethod] > b[this.state.sortMethod])
+        this.setState({articles: [...this.state.articles, ...articles]}, () => {
+          this.sortArticles(this.state.sortMethod)
+        })
+      }
     })
+  }
+  
+  shouldLoadMore = (direction) => {
+    const pageIndex = this.state.pagination - 1
+    const pageGroup = pageIndex / 4 * 100 
+    console.log('what we have,', pageIndex, pageGroup, this.state.articles.length)
+    if (pageIndex % 4 === 0 && direction === 'next' && this.state.articles.length <= pageGroup && this.state.articles.length < 500) {
+      return true;
+    } else {
+      return false;
+    }
   }
   
   loadNewArticles = async () => {
@@ -38,6 +57,16 @@ class App extends Component {
     const articles = await Api.fetchNewStories(this.state.articleIds, this.state.pagination)
     this.setState({loading: false});
     return articles
+  }
+  
+  sortArticles = (method) => {
+    let stateCopy = this.state.articles
+    stateCopy.sort((a, b) => a[method] > b[method]);
+    this.setState({articles: stateCopy})
+  }
+  
+  performSort = (method) => {
+    this.sortArticles(method)
   }
   
   render() {
@@ -49,10 +78,10 @@ class App extends Component {
           loading ?
             <Loader /> :
             <>
-              <Articles articles={articles} />
+              <Articles articles={articles} pagination={this.state.pagination} />
             </>
         }
-        <Footer paginate={this.paginate} pagination={this.state.pagination} />
+        <Footer paginate={this.paginate} pagination={this.state.pagination} loading={loading} />
       </div>
     )
   }
