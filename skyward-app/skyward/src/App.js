@@ -33,10 +33,10 @@ class App extends Component {
     this.setState({pagination: pageNumber}, async () => {
       if (this.shouldLoadMore(direction)) {
         let articles = await this.loadNewArticles();
-        articles.sort((a, b) => a[this.state.sortMethod] > b[this.state.sortMethod])
-        this.setState({articles: [...this.state.articles, ...articles]}, () => {
-          this.sortArticles(this.state.sortMethod)
+        articles.sort((a, b) => {
+            return a[this.state.sortMethod] > b[this.state.sortMethod] ? 1 : -1; 
         })
+        this.setState({articles: [...this.state.articles, ...articles]});
       }
     })
   }
@@ -61,12 +61,10 @@ class App extends Component {
   
   sortArticles = (method) => {
     let stateCopy = this.state.articles
-    stateCopy.sort((a, b) => a[method] > b[method]);
-    this.setState({articles: stateCopy})
-  }
-  
-  performSort = (method) => {
-    this.sortArticles(method)
+    stateCopy.sort((a, b) => {
+        return a[method] > b[method] ? 1 : -1; 
+    })
+    this.setState({articles: stateCopy, sortMethod: method, pagination: 1})
   }
   
   render() {
@@ -78,7 +76,7 @@ class App extends Component {
           loading ?
             <Loader /> :
             <>
-              <Articles articles={articles} pagination={this.state.pagination} />
+              <Articles articles={articles} pagination={this.state.pagination} sortMethod={this.state.sortMethod} sortArticles={this.sortArticles} />
             </>
         }
         <Footer paginate={this.paginate} pagination={this.state.pagination} loading={loading} />

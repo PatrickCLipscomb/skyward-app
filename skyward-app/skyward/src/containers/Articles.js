@@ -5,7 +5,8 @@ import Article from '../components/Article';
 class Articles extends Component {
   state = {
     sortedBy: 'time',
-    page: [0, 25]
+    page: [0, 25],
+    sortMethod: this.props.sortMethod
   }
   
   componentDidUpdate(prevProps) {
@@ -22,10 +23,20 @@ class Articles extends Component {
     this.setState({page: [lower, upper]})
   }
   
+  handleChange = (e) => {
+    this.setState({sortMethod: e.target.value})
+    this.props.sortArticles(e.target.value)
+  }
+  
   render() {
     this.props.articles.forEach((article) => console.log(article.score))
     return (
       <div className="Articles">
+        <select id="lang" onChange={this.handleChange} value={this.state.sortMethod}>
+            <option value="time">Time</option>
+            <option value="score">Score</option>
+            <option value="author">Author</option>
+        </select>
         {
           this.props.articles
             .slice(this.state.page[0], this.state.page[1])
