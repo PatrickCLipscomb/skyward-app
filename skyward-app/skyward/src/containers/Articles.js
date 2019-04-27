@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Article from '../components/Article';
+import Loader from '../components/Loader'
 
 class Articles extends Component {
   state = {
@@ -31,26 +32,35 @@ class Articles extends Component {
   render() {
     this.props.articles.forEach((article) => console.log(article.score))
     return (
-      <>
-        <div>
-          <select id="lang" onChange={this.handleChange} value={this.state.sortMethod}>
-              <option value="time">Time</option>
-              <option value="score">Score</option>
-              <option value="by">Author</option>
-          </select>
-        </div>
-        <div className="articles">
-          {
-            this.props.articles
-              .slice(this.state.page[0], this.state.page[1])
-              .map((article, index) => <Article article={article} key={index} index={index} selectArticle={this.props.selectArticle} />)
-          }
-        </div>
-        <div className="pagination">
-          <button onClick={() => this.props.paginate('prev')} disabled={this.props.pagination === 1 || this.props.loading}>Previous</button>
-          <button onClick={() => this.props.paginate('next')} disabled={this.props.pagination === 20 || this.props.loading}>Next</button>
-        </div>
-      </>
+      <div className="wrapper">
+        {
+          
+            this.props.loading ?
+              <Loader /> :
+        
+          <>
+            <div className="sort">
+              <span>Sort By: </span>
+              <select id="lang" onChange={this.handleChange} value={this.state.sortMethod}>
+                  <option value="time">Time</option>
+                  <option value="score">Score</option>
+                  <option value="by">Author</option>
+              </select>
+            </div>
+            <div className="articles">
+              {
+                this.props.articles
+                  .slice(this.state.page[0], this.state.page[1])
+                  .map((article, index) => <Article article={article} key={index} index={index} selectArticle={this.props.selectArticle} />)
+              }
+            </div>
+            <div className="pagination">
+              <button onClick={() => this.props.paginate('prev')} disabled={this.props.pagination === 1 || this.props.loading}>Previous</button>
+              <button onClick={() => this.props.paginate('next')} disabled={this.props.pagination === 20 || this.props.loading}>Next</button>
+            </div>
+          </>
+      }
+      </div>
     )
   }
 }
@@ -58,8 +68,7 @@ class Articles extends Component {
 Articles.propTypes = {
   articles: PropTypes.array,
   selectArticle: PropTypes.func,
-  paginate: PropTypes.func,
-  pagination: PropTypes.number
+  
 }
 
 Articles.defaultProps = {

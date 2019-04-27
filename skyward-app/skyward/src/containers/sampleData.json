@@ -1,0 +1,1077 @@
+[
+  {
+    "by": "4thaccount",
+    "descendants": 0,
+    "id": 19766275,
+    "score": 2,
+    "time": 1556382152,
+    "title": "Agile Artificial Intelligence",
+    "type": "story",
+    "url": "https://agileartificialintelligence.github.io"
+  },
+  {
+    "by": "ALee",
+    "descendants": 0,
+    "id": 19765700,
+    "score": 2,
+    "time": 1556375295,
+    "title": "Advances in Weather Prediction",
+    "type": "story",
+    "url": "http://science.sciencemag.org/content/363/6425/342"
+  },
+  {
+    "by": "Afkaristore",
+    "descendants": 1,
+    "id": 19765809,
+    "kids": [
+      19765814
+    ],
+    "score": 1,
+    "time": 1556376692,
+    "title": "Afkaristore Home Decor Ideas",
+    "type": "story",
+    "url": "https://afkaristore.com/collections/print-your-own-artwork-framed-posters/products/print-your-artwork-photo-paper-poster"
+  },
+  {
+    "by": "ArtWomb",
+    "descendants": 0,
+    "id": 19765895,
+    "score": 1,
+    "time": 1556377785,
+    "title": "Locations in the Neocortex: Object Recognition Using Cortical Grid Cells",
+    "type": "story",
+    "url": "https://www.frontiersin.org/articles/10.3389/fncir.2019.00022/full"
+  },
+  {
+    "by": "JackPoach",
+    "descendants": 0,
+    "id": 19766430,
+    "score": 1,
+    "time": 1556383989,
+    "title": "Elon Musk, SEC Agree to Guidelines on Twitter Use",
+    "type": "story",
+    "url": "https://techcrunch.com/2019/04/26/elon-musk-sec-agree-to-guidelines-on-twitter-use/"
+  },
+  {
+    "by": "Ldpe2G",
+    "descendants": 0,
+    "id": 19766044,
+    "score": 1,
+    "time": 1556379514,
+    "title": "Show HN: Script for calculate MXNet network flops",
+    "type": "story",
+    "url": "https://github.com/Ldpe2G/DeepLearningForFun/tree/master/MXNet-Python/CalculateFlopsTool"
+  },
+  {
+    "by": "Pennieblog",
+    "descendants": 2,
+    "id": 19765738,
+    "kids": [
+      19766140
+    ],
+    "score": 26,
+    "time": 1556375771,
+    "title": "Fifteen years addicted to heroin, five years addicted to life (2018)",
+    "type": "story",
+    "url": "https://medium.com/the-mission/15-years-addicted-to-heroin-5-years-addicted-to-life-heres-what-s-changed-5fb74cc0c767"
+  },
+  {
+    "by": "Reedx",
+    "descendants": 0,
+    "id": 19766006,
+    "score": 2,
+    "time": 1556378982,
+    "title": "PG&E's Radical Plan to Prevent Wildfires: Shut Down the Power Grid",
+    "type": "story",
+    "url": "https://www.wsj.com/articles/pg-es-radical-plan-to-prevent-wildfires-shut-down-the-power-grid-11556337671"
+  },
+  {
+    "by": "Tempest1981",
+    "descendants": 0,
+    "id": 19766268,
+    "score": 2,
+    "time": 1556382101,
+    "title": "Ford under criminal investigation for emissions testing problems",
+    "type": "story",
+    "url": "https://www.theverge.com/2019/4/26/18517991/ford-criminal-investigation-emissions-testing-problems-dieselgate"
+  },
+  {
+    "by": "Tomte",
+    "descendants": 0,
+    "id": 19766042,
+    "score": 2,
+    "time": 1556379501,
+    "title": "Fortnite keeps stealing dances – and no one knows if it’s illegal (2018)",
+    "type": "story",
+    "url": "https://www.theverge.com/2018/12/20/18149869/fortnite-dance-emote-lawsuit-milly-rock-floss-carlton"
+  },
+  {
+    "by": "Tomte",
+    "descendants": 1,
+    "id": 19766039,
+    "kids": [
+      19766153
+    ],
+    "score": 3,
+    "time": 1556379490,
+    "title": "Europe’s Dependence on the U.S. Was All Part of the Plan (2018)",
+    "type": "story",
+    "url": "https://www.politico.com/magazine/story/2018/07/15/trump-nato-europe-history-dependence-219011"
+  },
+  {
+    "by": "Tomte",
+    "descendants": 0,
+    "id": 19765904,
+    "score": 1,
+    "time": 1556377872,
+    "title": "How to organize your Google Photos collection",
+    "type": "story",
+    "url": "https://www.theverge.com/2019/4/27/18518379/how-to-organize-google-photos-collection"
+  },
+  {
+    "by": "Yuqing7",
+    "descendants": 0,
+    "id": 19765863,
+    "score": 2,
+    "time": 1556377409,
+    "title": "AI in Medical Imaging: Global Market Outlook",
+    "type": "story",
+    "url": "https://medium.com/syncedreview/ai-in-medical-imaging-global-market-outlook-ffeb96767e85"
+  },
+  {
+    "by": "Yuval_Halevi",
+    "descendants": 0,
+    "id": 19766369,
+    "score": 2,
+    "time": 1556383412,
+    "title": "PayPal plans $500M Uber investment",
+    "type": "story",
+    "url": "https://venturebeat.com/2019/04/26/paypal-plans-500-million-uber-investment/"
+  },
+  {
+    "by": "Yuval_Halevi",
+    "descendants": 2,
+    "id": 19765713,
+    "kids": [
+      19765888
+    ],
+    "score": 3,
+    "time": 1556375439,
+    "title": "Founder of Voat,‘Censorship-Free’ Reddit, Begs Users to Stop Making Death Threat",
+    "type": "story",
+    "url": "https://motherboard.vice.com/en_us/article/gy4gzy/founder-of-voat-the-censorship-free-reddit-begs-users-to-stop-making-death-threats"
+  },
+  {
+    "by": "adamnemecek",
+    "descendants": 0,
+    "id": 19766037,
+    "score": 2,
+    "time": 1556379461,
+    "title": "GPU Optimization for Games",
+    "type": "story",
+    "url": "https://gist.github.com/silvesthu/505cf0cbf284bb4b971f6834b8fec93d"
+  },
+  {
+    "by": "adamrmcd",
+    "descendants": 1,
+    "id": 19765726,
+    "kids": [
+      19765805,
+      19766032
+    ],
+    "score": 1,
+    "time": 1556375608,
+    "title": "Self-driving cars: Who to save, who to sacrifice?",
+    "type": "story",
+    "url": "https://ici.radio-canada.ca/info/2019/voitures-autonomes-dilemme-tramway/index-en.html"
+  },
+  {
+    "by": "ahcastor",
+    "descendants": 0,
+    "id": 19766066,
+    "score": 1,
+    "time": 1556379848,
+    "title": "QuadrigaCX: Patryn, Cotten, and Midas Gold–A Liberty Reserve Exchanger",
+    "type": "story",
+    "url": "https://amycastor.com/2019/04/09/quadrigacx-patryn-cotten-and-midas-gold-a-liberty-reserve-exchanger/"
+  },
+  {
+    "by": "ahcastor",
+    "descendants": 0,
+    "id": 19766060,
+    "score": 2,
+    "time": 1556379771,
+    "title": "TalkGold – the ponzi forum where Quadriga’s Patryn and Cotten first met",
+    "type": "story",
+    "url": "https://amycastor.com/2019/04/23/talkgold-the-ponzi-forum-where-quadrigas-patryn-and-cotten-first-met/"
+  },
+  {
+    "by": "andrewl",
+    "descendants": 0,
+    "id": 19765826,
+    "score": 3,
+    "time": 1556376996,
+    "title": "Which Surgeon You Get Matters-–A Lot. But How Do We Know Who the Good Ones Are?",
+    "type": "story",
+    "url": "https://medium.com/backchannel/should-surgeons-keep-score-8b3f890a7d4c"
+  },
+  {
+    "by": "artur_makly",
+    "descendants": 0,
+    "id": 19765926,
+    "score": 1,
+    "time": 1556378082,
+    "title": "‘If You Want to Kill Someone, We Are the Right Guys’",
+    "type": "story",
+    "url": "http://www.wired.com/story/dark-web-bitcoin-murder-cottage-grove/"
+  },
+  {
+    "by": "ayanai",
+    "descendants": 0,
+    "id": 19766322,
+    "score": 1,
+    "time": 1556382749,
+    "title": "Personal Information on New York City Voters Is Now Available for All to See",
+    "type": "story",
+    "url": "https://www.nytimes.com/2019/04/26/nyregion/voter-registration-nyc-online.html"
+  },
+  {
+    "by": "based2",
+    "descendants": 0,
+    "id": 19766455,
+    "score": 1,
+    "time": 1556384354,
+    "title": "Wazuh: Open-Source Security Platform",
+    "type": "story",
+    "url": "https://wazuh.com/"
+  },
+  {
+    "by": "bluedino",
+    "descendants": 0,
+    "id": 19766296,
+    "score": 2,
+    "time": 1556382413,
+    "title": "Mastering Motion",
+    "type": "story",
+    "url": "https://dolphin-emu.org/blog/2019/04/26/mastering-motion/"
+  },
+  {
+    "by": "bowaggoner",
+    "descendants": 1,
+    "id": 19766288,
+    "kids": [
+      19766312
+    ],
+    "score": 1,
+    "time": 1556382346,
+    "title": "Show HN: Play-money prediction market for Game of Thrones",
+    "type": "story",
+    "url": "https://gotpredictions.org"
+  },
+  {
+    "by": "bweber",
+    "descendants": 0,
+    "id": 19766407,
+    "score": 1,
+    "time": 1556383765,
+    "title": "Portfolio-Scale Machine Learning at Zynga",
+    "type": "story",
+    "url": "https://medium.com/zynga-engineering/portfolio-scale-machine-learning-at-zynga-bda8e29ee561"
+  },
+  {
+    "by": "chriskrycho",
+    "descendants": 0,
+    "id": 19765739,
+    "score": 1,
+    "time": 1556375772,
+    "title": "New Rustacean E030: Can You See Me Now? Item Visibility as API Design Tool",
+    "type": "story",
+    "url": "https://newrustacean.com/show_notes/e030/"
+  },
+  {
+    "by": "davidbarker",
+    "descendants": 0,
+    "id": 19765780,
+    "score": 1,
+    "time": 1556376316,
+    "title": "Uppy 1.0: Your best friend in file uploading",
+    "type": "story",
+    "url": "https://uppy.io/blog/2019/04/1.0/"
+  },
+  {
+    "by": "dhotson",
+    "descendants": 1,
+    "id": 19766271,
+    "kids": [
+      19766294
+    ],
+    "score": 2,
+    "time": 1556382119,
+    "title": "URL Zombies – a zombie survival game in the URL bar",
+    "type": "story",
+    "url": "https://url-zombies.glitch.me/"
+  },
+  {
+    "by": "eatonphil",
+    "descendants": 0,
+    "id": 19765696,
+    "score": 1,
+    "time": 1556375277,
+    "title": "Introduction to x86_64 Assembly on Linux",
+    "type": "story",
+    "url": "http://briansteffens.com/introduction-to-64-bit-assembly/01-hello-world/"
+  },
+  {
+    "by": "enraged_camel",
+    "descendants": 0,
+    "id": 19766089,
+    "score": 2,
+    "time": 1556380167,
+    "title": "Dragon Tax Return Simulator 2015",
+    "type": "story",
+    "url": "https://walsh9.github.io/dragon-taxes/"
+  },
+  {
+    "by": "frankelydiaz",
+    "descendants": 0,
+    "id": 19766255,
+    "score": 3,
+    "time": 1556381917,
+    "title": "JavaScript Logger Service",
+    "type": "story",
+    "url": "https://logjs.net/"
+  },
+  {
+    "by": "h43z",
+    "descendants": 0,
+    "id": 19765687,
+    "score": 2,
+    "time": 1556375079,
+    "title": "Show HN: A Screen Recorder Website",
+    "type": "story",
+    "url": "https://screenrecord.43z.one/"
+  },
+  {
+    "by": "hairyelefante",
+    "descendants": 0,
+    "id": 19766463,
+    "score": 1,
+    "time": 1556384439,
+    "title": "The Dawn of the Reliance Economy",
+    "type": "story",
+    "url": "https://onezero.medium.com/welcome-to-the-reliance-economy-3daab396ce4c"
+  },
+  {
+    "by": "headalgorithm",
+    "descendants": 0,
+    "id": 19766264,
+    "score": 1,
+    "time": 1556382069,
+    "title": "You’ve Got a Blind Spot at Nighttime",
+    "type": "story",
+    "url": "https://blogs.scientificamerican.com/illusion-chasers/youve-got-a-blind-spot-at-nighttime/"
+  },
+  {
+    "by": "headalgorithm",
+    "descendants": 0,
+    "id": 19766083,
+    "score": 2,
+    "time": 1556380086,
+    "title": "Raising a Child vs. Training a Machine",
+    "type": "story",
+    "url": "https://towardsdatascience.com/raising-a-child-vs-training-a-machine-9b33a5f4cc2a"
+  },
+  {
+    "by": "headalgorithm",
+    "descendants": 1,
+    "id": 19766071,
+    "kids": [
+      19766342
+    ],
+    "score": 1,
+    "time": 1556379914,
+    "title": "How I Passed the Google Cloud Professional Data Engineer Certification Exam",
+    "type": "story",
+    "url": "https://towardsdatascience.com/passing-the-google-cloud-professional-data-engineer-certification-87da9908b333"
+  },
+  {
+    "by": "headalgorithm",
+    "descendants": 0,
+    "id": 19766020,
+    "score": 1,
+    "time": 1556379263,
+    "title": "Who Built Maslow’s Pyramid?",
+    "type": "story",
+    "url": "https://journals.aom.org/doi/10.5465/amle.2017.0351"
+  },
+  {
+    "by": "headalgorithm",
+    "descendants": 0,
+    "id": 19766013,
+    "score": 2,
+    "time": 1556379097,
+    "title": "Gravitational waves hint at detection of black hole eating star",
+    "type": "story",
+    "url": "https://www.nature.com/articles/d41586-019-01377-2"
+  },
+  {
+    "by": "headalgorithm",
+    "descendants": 0,
+    "id": 19766008,
+    "score": 1,
+    "time": 1556379007,
+    "title": "Nanoparticles take a fantastic, magnetic voyage",
+    "type": "story",
+    "url": "https://robohub.org/nanoparticles-take-a-fantastic-magnetic-voyage/"
+  },
+  {
+    "by": "herohamp",
+    "descendants": 0,
+    "id": 19765721,
+    "score": 1,
+    "time": 1556375518,
+    "title": "(Ab)Using Caddy Rewrites and Filters",
+    "type": "story",
+    "url": "https://hampton.pw/posts/AbUsing-Rewrites-And-Filters"
+  },
+  {
+    "by": "high_derivative",
+    "descendants": 4,
+    "id": 19765757,
+    "kids": [
+      19765850,
+      19766095,
+      19766233
+    ],
+    "score": 7,
+    "time": 1556376002,
+    "title": "What I Saw at Middlebury College",
+    "type": "story",
+    "url": "https://quillette.com/2019/04/27/what-i-saw-at-middlebury-college/"
+  },
+  {
+    "by": "howard941",
+    "descendants": 0,
+    "id": 19766249,
+    "score": 2,
+    "time": 1556381890,
+    "title": "Hedge-Fund Ownership Cost Sears Workers Their Jobs. Now They’re Fighting Back",
+    "type": "story",
+    "url": "https://www.thenation.com/article/sears-toys-r-us-hedge-funds-bankruptcy-retail-workers/"
+  },
+  {
+    "by": "howard941",
+    "descendants": 0,
+    "id": 19765918,
+    "score": 1,
+    "time": 1556378004,
+    "title": "‘Digital privacy does not exist’: A Q&A on data privacy around the world",
+    "type": "story",
+    "url": "https://www.politico.com/story/2019/04/26/digital-privacy-q-and-a-1290899"
+  },
+  {
+    "by": "howard941",
+    "descendants": 0,
+    "id": 19765842,
+    "score": 1,
+    "time": 1556377203,
+    "title": "Dead fish wash up near $6.3M protective passageway. Why didn’t it work?",
+    "type": "story",
+    "url": "https://www.sacbee.com/news/state/california/water-and-drought/delta/article229592929.html"
+  },
+  {
+    "by": "indigodaddy",
+    "descendants": 0,
+    "id": 19766408,
+    "score": 2,
+    "time": 1556383765,
+    "title": "Computers were faster when they were slower [video]",
+    "type": "story",
+    "url": "https://www.bitchute.com/video/V7lG4bont7g/"
+  },
+  {
+    "by": "indigodaddy",
+    "descendants": 4,
+    "id": 19765959,
+    "kids": [
+      19766447,
+      19766461,
+      19766160
+    ],
+    "score": 32,
+    "time": 1556378458,
+    "title": "Back in the Day: Unix, Minix and Linux",
+    "type": "story",
+    "url": "https://www.linuxjournal.com/content/back-day-unix-minix-and-linux"
+  },
+  {
+    "by": "jdmark",
+    "descendants": 0,
+    "id": 19765724,
+    "score": 2,
+    "time": 1556375559,
+    "title": "Nasa's Working on a Nano-Starship That Travels at 1/5 the Speed of Light",
+    "type": "story",
+    "url": "https://www.sciencealert.com/nasa-s-working-on-a-nano-starship-that-travels-at-1-5-the-speed-of-light"
+  },
+  {
+    "by": "jkuria",
+    "descendants": 0,
+    "id": 19765800,
+    "score": 2,
+    "time": 1556376578,
+    "title": "The Truth About Neuromarketing (Is it Psuedo-Science?)",
+    "type": "story",
+    "url": "https://capitalandgrowth.org/questions/1811/have-there-been-any-neuromarketing-successes.html?childToView=1828#answer-1828"
+  },
+  {
+    "by": "kaboro",
+    "descendants": 0,
+    "id": 19765851,
+    "score": 2,
+    "time": 1556377259,
+    "title": "Bridging the Gap in 3D Object Detection for Autonomous Driving",
+    "type": "story",
+    "url": "https://arxiv.org/abs/1812.07179"
+  },
+  {
+    "by": "kareemm",
+    "descendants": 0,
+    "id": 19766280,
+    "score": 1,
+    "time": 1556382206,
+    "title": "How I bootstrapped to $15M in Lifetime Revenue",
+    "type": "story",
+    "url": "https://www.facetdev.com/blog/posts/my-roundabout-journey-bootstrapping-to-15m-in-lifetime-revenue/"
+  },
+  {
+    "by": "kasbah",
+    "descendants": 1,
+    "id": 19766178,
+    "kids": [
+      19766201
+    ],
+    "score": 2,
+    "time": 1556381140,
+    "title": "Show HN: ReSeq – Reusing HiSeq DNA Sequencers",
+    "type": "story",
+    "url": "https://wemakeit.com/projects/reseq-reuse-dna-sequencers?locale=en"
+  },
+  {
+    "by": "kiraken",
+    "descendants": 0,
+    "id": 19766180,
+    "score": 12,
+    "text": "I posted a link to a Trustpilot review yesterday about what happened, but freelancer.com, had it removed, so here&#x27;s the review again here.<p>THIS IS A WARNING TO ANYONE WHO USES FREELANCER, STAY AWAY, STAY AWAY, STAY AWAY!!!<p>This company has screwed me over so many times and screwed so many developers and clients that it’s a mystery how they haven&#x27;t been shut down yet.<p>It all started with a simple contract i received, and once i received an initial payment of $1300, my account got limited and frozen, i contacted them asking about the reason behind this, and they just simply told me it was because of outside communication, to which i responded that it&#x27;s very normal call to go over everything, that is a business standard, and the contract went through the platform and so did the payment, so there was no reason behind these extreme majors they took.<p>The money was frozen and they told me that it would stay that way, up until they closed my account for good one week after with a simple email, saying that they closed my account.<p>I have worked on this platform for over 7 years, finished countless projects with full perfect five star reviews, never hurt anyone or hurt the platform in any way, and the only thing i did occasionally that was frowned upon was a call here or there to explain something to a client or to share my screen with them, and its not my fault that they did not provide these features on their platform and i had to use something else to make up for their short comings.<p>In conclusion, i gave them 7 years of my life; they closed my account for nothing, stole from me, and took away my main source of living.<p>I have not been able to even leave my house for the past week, and had to force myself to write this review, even as just a warning for people, and I’ll make sure that everyone hears about what happened to me.",
+    "time": 1556381149,
+    "title": "Freelancer.com stole from me, and then closed my account",
+    "type": "story"
+  },
+  {
+    "by": "laurex",
+    "descendants": 0,
+    "id": 19766119,
+    "score": 1,
+    "time": 1556380446,
+    "title": "All that glitters is not quantum AI",
+    "type": "story",
+    "url": "https://www.zdnet.com/article/all-that-glitters-is-not-quantum-ai/"
+  },
+  {
+    "by": "laurex",
+    "descendants": 0,
+    "id": 19766104,
+    "score": 1,
+    "time": 1556380273,
+    "title": "Blame my brain: A killer's bold defense gets a court hearing",
+    "type": "story",
+    "url": "https://www.nbcnews.com/news/us-news/blame-my-brain-killer-s-bold-defense-gets-court-hearing-n998676"
+  },
+  {
+    "by": "laurex",
+    "descendants": 0,
+    "id": 19766092,
+    "score": 1,
+    "time": 1556380181,
+    "title": "The Two Cultures of Computational Psychiatry",
+    "type": "story",
+    "url": "https://jamanetwork.com/journals/jamapsychiatry/article-abstract/2731313"
+  },
+  {
+    "by": "lawrenceyan",
+    "descendants": 0,
+    "id": 19766289,
+    "score": 1,
+    "time": 1556382371,
+    "title": "Automation and Job Loss: Steps to take today for a brighter future tomorrow",
+    "type": "story",
+    "url": "https://www.linkedin.com/pulse/automation-job-loss-steps-we-need-take-today-order-ensure-yan/"
+  },
+  {
+    "by": "lelf",
+    "descendants": 0,
+    "id": 19765804,
+    "score": 1,
+    "time": 1556376624,
+    "title": "Floating-Point Reference Sheet for Intel Architecture",
+    "type": "story",
+    "url": "https://software.intel.com/en-us/articles/floating-point-reference-sheet-for-intel-architecture"
+  },
+  {
+    "by": "lichtenberger",
+    "descendants": 0,
+    "id": 19766132,
+    "kids": [
+      19766165
+    ],
+    "score": 1,
+    "time": 1556380582,
+    "title": "Can AI help judges make the bail system fairer and safer?",
+    "type": "story",
+    "url": "https://engineering.stanford.edu/magazine/article/can-ai-help-judges-make-bail-system-fairer-and-safer"
+  },
+  {
+    "by": "lichtenberger",
+    "descendants": 0,
+    "id": 19765742,
+    "score": 1,
+    "time": 1556375812,
+    "title": "Versatile Key Management for Secure Cloud Storage [pdf]",
+    "type": "story",
+    "url": "https://kops.uni-konstanz.de/bitstream/handle/123456789/20097/Graf_Versatile%20Key%20Management.pdf"
+  },
+  {
+    "by": "ljiljana",
+    "descendants": 0,
+    "id": 19766428,
+    "score": 1,
+    "time": 1556383976,
+    "title": "The Yelp Economic Average Uncovers Possible Ride-Sharing Effect",
+    "type": "story",
+    "url": "https://yelpblog.com/2019/04/the-yelp-economic-average-uncovers-possible-ridesharing-effect"
+  },
+  {
+    "by": "lkrubner",
+    "descendants": 0,
+    "id": 19766057,
+    "score": 3,
+    "time": 1556379730,
+    "title": "Why are women being pushed away from the tech industry?",
+    "type": "story",
+    "url": "http://www.smashcompany.com/business/why-are-women-being-pushed-away-from-the-tech-industry"
+  },
+  {
+    "by": "majikarp",
+    "descendants": 0,
+    "id": 19765897,
+    "score": 4,
+    "time": 1556377805,
+    "title": "Best Text Editors for Programmers This Year",
+    "type": "story",
+    "url": "https://hackernoon.com/5-best-text-editors-for-programmers-3f54ef51d5ae"
+  },
+  {
+    "by": "merpnderp",
+    "descendants": 0,
+    "id": 19765737,
+    "score": 1,
+    "time": 1556375755,
+    "title": "Choctaw Nation testing drones to manage agriculture",
+    "type": "story",
+    "url": "https://www.droneblog.com/2019/03/11/choctaw-nation-hosts-2nd-annual-emerging-aviation-technology-conference/"
+  },
+  {
+    "by": "mooreds",
+    "descendants": 0,
+    "id": 19766059,
+    "score": 1,
+    "time": 1556379768,
+    "title": "Using Gource to Visualize a GitRepo and Why a Non-Dev Cares",
+    "type": "story",
+    "url": "https://www.culturefoundry.com/cultivate/technology/using-gource-to-visualize-a-gitrepo"
+  },
+  {
+    "by": "mooreds",
+    "descendants": 0,
+    "id": 19765952,
+    "score": 2,
+    "time": 1556378403,
+    "title": "Example Code Repo for the Puppet 5 Beginner's Guide",
+    "type": "story",
+    "url": "https://github.com/bitfield/puppet-beginners-guide-3"
+  },
+  {
+    "by": "netborn",
+    "descendants": 0,
+    "id": 19766456,
+    "score": 2,
+    "time": 1556384373,
+    "title": "Show HN: Cute Password Generator",
+    "type": "story",
+    "url": "https://www.outpan.com/app/792a37d981"
+  },
+  {
+    "by": "nhooyr",
+    "descendants": 0,
+    "id": 19766261,
+    "score": 8,
+    "time": 1556382015,
+    "title": "Show HN: nhooyr.io/websocket: A minimal and idiomatic WebSocket library for Go",
+    "type": "story",
+    "url": "https://github.com/nhooyr/websocket"
+  },
+  {
+    "by": "nonbel",
+    "descendants": 20,
+    "id": 19765993,
+    "kids": [
+      19766417,
+      19766097,
+      19766073,
+      19766144
+    ],
+    "score": 48,
+    "time": 1556378826,
+    "title": "Underwater Exploring Is Banned in Brazil (1985)",
+    "type": "story",
+    "url": "https://www.nytimes.com/1985/06/25/science/underwater-exploring-is-banned-in-brazil.html"
+  },
+  {
+    "by": "ohjeez",
+    "descendants": 0,
+    "id": 19765866,
+    "score": 4,
+    "time": 1556377438,
+    "title": "The Weird Machine That Measured Radio Audiences in the '30s and '40s",
+    "type": "story",
+    "url": "https://paleofuture.gizmodo.com/the-weird-machine-that-measured-radio-audiences-in-the-1633851253"
+  },
+  {
+    "by": "pat2man",
+    "descendants": 0,
+    "id": 19766012,
+    "score": 2,
+    "time": 1556379079,
+    "title": "Performance considerations when reading directories on macOS",
+    "type": "story",
+    "url": "http://blog.tempel.org/2019/04/dir-read-performance.html?m=1"
+  },
+  {
+    "by": "paulpauper",
+    "descendants": 0,
+    "id": 19766025,
+    "score": 1,
+    "time": 1556379299,
+    "title": "Is the Sugar Daddy Who Gives Away Tens of Thousands of Dollars on Twitter Real?",
+    "type": "story",
+    "url": "https://melmagazine.com/en-us/story/is-the-sugar-daddy-who-gives-away-tens-of-thousands-of-dollars-on-twitter-real"
+  },
+  {
+    "by": "paulpauper",
+    "descendants": 0,
+    "id": 19765847,
+    "score": 3,
+    "time": 1556377241,
+    "title": "One Font Took over the World",
+    "type": "story",
+    "url": "https://theoutline.com/post/7356/gotham-font-is-everywhere"
+  },
+  {
+    "by": "pcr910303",
+    "descendants": 0,
+    "id": 19765898,
+    "score": 2,
+    "time": 1556377811,
+    "title": "UEFI boot: how does that work, then?",
+    "type": "story",
+    "url": "https://www.happyassassin.net/2014/01/25/uefi-boot-how-does-that-actually-work-then/"
+  },
+  {
+    "by": "petethomas",
+    "descendants": 0,
+    "id": 19765797,
+    "score": 1,
+    "time": 1556376550,
+    "title": "Retailers Are Tracking Where You Shop and Where You Sleep",
+    "type": "story",
+    "url": "https://www.bloomberg.com/news/articles/2019-04-27/retailers-are-tracking-where-you-shop-and-where-you-sleep"
+  },
+  {
+    "by": "phront",
+    "descendants": 1,
+    "id": 19766027,
+    "kids": [
+      19766043
+    ],
+    "score": 3,
+    "time": 1556379308,
+    "title": "Why Kotlin Sucks",
+    "type": "story",
+    "url": "https://proandroiddev.com/why-kotlin-sucks-ab27a6b15cb6"
+  },
+  {
+    "by": "pjmlp",
+    "descendants": 0,
+    "id": 19766015,
+    "score": 1,
+    "time": 1556379134,
+    "title": "Updates to non-SDK interface restrictions in Android Q",
+    "type": "story",
+    "url": "https://developer.android.com/preview/non-sdk-q"
+  },
+  {
+    "by": "rahimnathwani",
+    "descendants": 0,
+    "id": 19766409,
+    "score": 1,
+    "time": 1556383767,
+    "title": "The standard QWERTY finger placement is uncomfortable and terribly designed",
+    "type": "story",
+    "url": "http://www.onehandkeyboard.org/standard-qwerty-finger-placement/"
+  },
+  {
+    "by": "rcap",
+    "descendants": 0,
+    "id": 19765942,
+    "score": 2,
+    "time": 1556378297,
+    "title": "Taking lecture notes using LaTeX part 2: Making figures in real time",
+    "type": "story",
+    "url": "https://castel.dev/post/lecture-notes-2/"
+  },
+  {
+    "by": "rodmena",
+    "descendants": 0,
+    "id": 19765761,
+    "score": 3,
+    "time": 1556376041,
+    "title": "PostgreSQL Features You May Not Have Tried but Should",
+    "type": "story",
+    "url": "https://pgdash.io/blog/postgres-features.html"
+  },
+  {
+    "by": "saisrirampur",
+    "descendants": 0,
+    "id": 19766081,
+    "score": 1,
+    "time": 1556380065,
+    "title": "Talking on the Phone: Better Communication",
+    "type": "story",
+    "url": "http://www.craigkerstiens.com/2019/04/24/talking-on-the-phone/"
+  },
+  {
+    "by": "sarapeyton",
+    "descendants": 0,
+    "id": 19765801,
+    "score": 1,
+    "time": 1556376582,
+    "title": "Leadership Lessons from Your Inner Child",
+    "type": "story",
+    "url": "https://sloanreview.mit.edu/article/leadership-lessons-from-your-inner-child/"
+  },
+  {
+    "by": "secstate",
+    "descendants": 0,
+    "id": 19766134,
+    "score": 1,
+    "time": 1556380596,
+    "title": "Exponential Sums of the Day",
+    "type": "story",
+    "url": "https://www.johndcook.com/expsum/"
+  },
+  {
+    "by": "secstate",
+    "descendants": 0,
+    "id": 19765673,
+    "score": 1,
+    "time": 1556374910,
+    "title": "Nobel prize awarding process needs updating",
+    "type": "story",
+    "url": "https://aeon.co/essays/nobel-prizes-for-individual-scientists-are-an-anachronism"
+  },
+  {
+    "by": "secstate",
+    "descendants": 26,
+    "id": 19765650,
+    "kids": [
+      19766142,
+      19766045,
+      19765900,
+      19766389,
+      19766399,
+      19765890,
+      19765886,
+      19765891,
+      19765901
+    ],
+    "score": 34,
+    "time": 1556374580,
+    "title": "A Small Town in the Philippines Takes a Stand: It Banned Gossip",
+    "type": "story",
+    "url": "https://www.msn.com/en-gb/news/world/a-small-town-takes-a-stand-it-banned-gossip/ar-BBWix0p"
+  },
+  {
+    "by": "shaunta",
+    "descendants": 0,
+    "id": 19765896,
+    "score": 2,
+    "time": 1556377799,
+    "title": "How to Start Writing a Novel",
+    "type": "story",
+    "url": "https://medium.com/the-1000-day-mfa/how-to-start-writing-a-novel-2df0805a65bd"
+  },
+  {
+    "by": "shawndumas",
+    "descendants": 0,
+    "id": 19766309,
+    "score": 1,
+    "time": 1556382598,
+    "title": "Track-Tile Rosters in the 18xx: Their Use and Management",
+    "type": "story",
+    "url": "https://kanga.nu/~claw/blog/posts/2017/04/18/counting-cain/"
+  },
+  {
+    "by": "sidimedhaker",
+    "descendants": 0,
+    "id": 19766137,
+    "score": 1,
+    "text": "Hi",
+    "time": 1556380624,
+    "title": "Noukchott",
+    "type": "story"
+  },
+  {
+    "by": "sk0g",
+    "descendants": 35,
+    "id": 19766105,
+    "kids": [
+      19766184,
+      19766450,
+      19766444,
+      19766242,
+      19766344,
+      19766396,
+      19766336,
+      19766382
+    ],
+    "score": 46,
+    "time": 1556380319,
+    "title": "I'm a Data Scientist Making $125K and It's Not My Passion",
+    "type": "story",
+    "url": "https://www.refinery29.com/en-us/six-figure-paycheck-data-scientist-nyc"
+  },
+  {
+    "by": "tmlee",
+    "descendants": 0,
+    "id": 19765861,
+    "score": 1,
+    "time": 1556377406,
+    "title": "Electric Scooters Aren’t a Transportation Revolution Yet",
+    "type": "story",
+    "url": "https://www.citylab.com/transportation/2019/04/electric-scooter-micromobility-transportation-revolution/587440/"
+  },
+  {
+    "by": "tosh",
+    "descendants": 0,
+    "id": 19766216,
+    "score": 2,
+    "time": 1556381551,
+    "title": "Putin mulls easing Russian passport rules for whole Ukraine",
+    "type": "story",
+    "url": "https://www.bbc.co.uk/news/world-europe-48078842"
+  },
+  {
+    "by": "tosh",
+    "descendants": 0,
+    "id": 19765981,
+    "score": 1,
+    "time": 1556378707,
+    "title": "Array destructuring for multi-value returns (in light of React hooks)",
+    "type": "story",
+    "url": "https://docs.google.com/document/d/1hWb-lQW4NSG9yRpyyiAA_9Ktytd5lypLnVLhPX9vamE/mobilebasic"
+  },
+  {
+    "by": "truth_seeker",
+    "descendants": 3,
+    "id": 19765963,
+    "kids": [
+      19766263,
+      19766277
+    ],
+    "score": 13,
+    "time": 1556378499,
+    "title": "Programming Languages in 15 Minutes [video]",
+    "type": "story",
+    "url": "https://www.youtube.com/watch?v=duhDovqHbEs"
+  },
+  {
+    "by": "unevbox",
+    "descendants": 0,
+    "id": 19765781,
+    "score": 1,
+    "time": 1556376317,
+    "title": "Latest Renders of 2019 iPhone Show Camera Bump Integrated into Rear Glass",
+    "type": "story",
+    "url": "http://howmakeit.us/latest-renders-of-2019-iphone-show-camera-bump-integrated-into-rear-glass/"
+  },
+  {
+    "by": "unevbox",
+    "descendants": 0,
+    "id": 19765752,
+    "score": 1,
+    "time": 1556375928,
+    "title": "Run Android Apps on Your Windows PC",
+    "type": "story",
+    "url": "https://www.extremetech.com/computing/83812-run-android-apps-on-your-windows-pc-2"
+  },
+  {
+    "by": "uyoakaoma",
+    "descendants": 0,
+    "id": 19765937,
+    "score": 1,
+    "time": 1556378236,
+    "title": "Goma server is now open source",
+    "type": "story",
+    "url": "https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/eOtBzosZtd8"
+  },
+  {
+    "by": "vimy",
+    "descendants": 0,
+    "id": 19766245,
+    "score": 2,
+    "time": 1556381878,
+    "title": "What the Hell Is Going on with UFOs and the Department of Defense?",
+    "type": "story",
+    "url": "https://www.thedrive.com/the-war-zone/27666/what-the-hell-is-going-on-with-ufos-and-department-of-defense"
+  },
+  {
+    "by": "vmbrasseur",
+    "descendants": 0,
+    "id": 19766218,
+    "score": 4,
+    "time": 1556381559,
+    "title": "Docker Hub Compromised, Users Urged to Reset Passwords, Tokens",
+    "type": "story",
+    "url": "https://thenewstack.io/docker-hub-compromised-users-urged-to-reset/"
+  },
+  {
+    "by": "yanowitz",
+    "descendants": 0,
+    "id": 19765703,
+    "score": 1,
+    "time": 1556375324,
+    "title": "The Raisin Situation",
+    "type": "story",
+    "url": "https://www.nytimes.com/2019/04/27/style/sun-maid-raisin-industry.html"
+  },
+  {
+    "by": "yarapavan",
+    "descendants": 0,
+    "id": 19766195,
+    "score": 3,
+    "time": 1556381323,
+    "title": "In the open-plan office, wireless headphones are the new cubicles",
+    "type": "story",
+    "url": "https://www.theatlantic.com/health/archive/2019/04/airpods-open-plan-offices/588112/"
+  }
+]
