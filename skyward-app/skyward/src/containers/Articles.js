@@ -43,8 +43,12 @@ class Articles extends Component {
           {
             this.props.articles
               .slice(this.state.page[0], this.state.page[1])
-              .map((article, index) => <Article article={article} key={index} />)
+              .map((article, index) => <Article article={article} key={index} index={index} selectArticle={this.props.selectArticle} />)
           }
+        </div>
+        <div className="pagination">
+          <button onClick={() => this.props.paginate('prev')} disabled={this.props.pagination === 1 || this.props.loading}>Previous</button>
+          <button onClick={() => this.props.paginate('next')} disabled={this.props.pagination === 20 || this.props.loading}>Next</button>
         </div>
       </>
     )
@@ -52,11 +56,16 @@ class Articles extends Component {
 }
 
 Articles.propTypes = {
-  articles: PropTypes.array
+  articles: PropTypes.array,
+  selectArticle: PropTypes.func,
+  paginate: PropTypes.func,
+  pagination: PropTypes.number
 }
 
 Articles.defaultProps = {
-  articles: []
+  articles: [],
+  selectArticle: () => {},
+  paginate: () => {}
 }
 
 export default Articles;

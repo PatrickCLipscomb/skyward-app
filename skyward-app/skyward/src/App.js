@@ -4,7 +4,11 @@ import Articles from './containers/Articles';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Loader from './components/Loader';
+import About from './components/About';
+import ArticleDetails from './components/ArticleDetails';
 import Api from './services/HackerNewsService.js';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { withRouter } from 'react-router'
 import './App.scss';
 
 class App extends Component {
@@ -13,7 +17,8 @@ class App extends Component {
     articles: [],
     pagination: 1,
     articleIds: [],
-    sortMethod: 'time'
+    sortMethod: 'time',
+    selectedArticle: null
   }
   
   async componentDidMount() {
@@ -67,20 +72,34 @@ class App extends Component {
     this.setState({articles: stateCopy, sortMethod: method, pagination: 1})
   }
   
+  selectArticle = (index) => {
+    this.setState({selectedArticle: index})
+  }
+  
   render() {
     const { articles, loading } = this.state;
     return (
-      <div className="app">
-        <Header date={'4/25/2019'} />
-        {
-          loading ?
-            <Loader /> :
-            <>
-              <Articles articles={articles} pagination={this.state.pagination} sortMethod={this.state.sortMethod} sortArticles={this.sortArticles} />
-            </>
-        }
-        <Footer paginate={this.paginate} pagination={this.state.pagination} loading={loading} />
-      </div>
+      <Router>
+        <div className="app">
+          <Header date={'4/25/2019'} />
+          {
+            loading ?
+              <Loader /> :
+              <>
+                <Route 
+                  exact path="/"
+                  render={(props, state) => <Articles articles={articles} pagination={this.state.pagination} sortMethod={this.state.sortMethod} sortArticles={this.sortArticles} selectArticle={this.selectArticle} paginate={this.paginate} loading={loading} /> }
+                />
+                <Route
+                  path="/articles/:index"
+                  render={(props, state) => <ArticleDetails article={articles[this.state.selectedArticle]} />}
+                />
+                <Route path="/about" component={About} />
+              </>
+          }
+          <Footer />
+        </div>
+      </Router>
     )
   }
 }
