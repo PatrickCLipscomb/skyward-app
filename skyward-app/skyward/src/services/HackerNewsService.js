@@ -1,8 +1,14 @@
+import history from '../history';
 const HN_URL = 'https://hacker-news.firebaseio.com/v0';
 
 const makeFetch = async (url) => {
-  const request = await fetch(`${HN_URL}${url}`);
-  return request.json();
+  try {
+    const request = await fetch(`${HN_URL}${url}`);
+    return request.json();
+  } catch (e) {
+    console.error("Error has occured: ", e)
+    history.push('/not-found')
+  }
 }
 
 const Api = {

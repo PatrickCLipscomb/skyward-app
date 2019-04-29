@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Loader from './components/Loader';
 import About from './components/About';
+import NotFound from './components/NotFound';
 import ArticleDetails from './components/ArticleDetails';
 import Api from './services/HackerNewsService.js';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -25,11 +26,15 @@ class App extends Component {
     this.setState({loading: true});
     const articleIds = await Api.fetchNewStoryIDs();
     this.setState({articleIds}, async () => {
-      const articles = await this.loadNewArticles();
-      this.setState({articles}, () => {
-        this.sortArticles(this.state.sortMethod)
-      })
-      console.log(articles)
+      if (articleIds) {
+        const articles = await this.loadNewArticles();
+        this.setState({articles}, () => {
+          this.sortArticles(this.state.sortMethod)
+        })
+        console.log(articles)
+      } else {
+        this.setState({loading: false});
+      }
     })  
   }
   
@@ -95,6 +100,7 @@ class App extends Component {
               render={(props, state) => <ArticleDetails article={articles[this.state.selectedArticle]} />}
             />
             <Route path="/about" component={About} />
+            <Route path="/not-found" component={NotFound} />
           </div>
           <Footer />
         </div>
