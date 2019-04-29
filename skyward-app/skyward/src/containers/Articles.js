@@ -30,7 +30,6 @@ class Articles extends Component {
   }
   
   render() {
-    this.props.articles.forEach((article) => console.log(article.score))
     return (
       <div className="">
         {
@@ -55,8 +54,9 @@ class Articles extends Component {
               }
             </div>
             <div className="pagination">
-              <button onClick={() => this.props.paginate('prev')} disabled={this.props.pagination === 1 || this.props.loading}>{'<'}</button>
-              <button onClick={() => this.props.paginate('next')} disabled={this.props.pagination === 20 || this.props.loading}>{'>'}</button>
+              <button onClick={() => this.props.paginate('prev')} disabled={this.props.pagination === 1 || this.props.loading}>Prev</button>
+              <p>Page Number {this.props.pagination}</p>
+              <button onClick={() => this.props.paginate('next')} disabled={this.props.pagination === 20 || this.props.loading}>Next</button>
             </div>
           </>
       }

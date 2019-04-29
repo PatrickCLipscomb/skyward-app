@@ -35,27 +35,28 @@ class App extends Component {
   
   paginate = async (direction) => {
     const pageNumber = direction === 'next' ? this.state.pagination + 1 : this.state.pagination - 1
-    this.setState({pagination: pageNumber}, async () => {
-      if (this.shouldLoadMore(direction)) {
-        let articles = await this.loadNewArticles();
-        articles.sort((a, b) => {
-            return a[this.state.sortMethod] > b[this.state.sortMethod] ? 1 : -1; 
-        })
-        this.setState({articles: [...this.state.articles, ...articles]});
-      }
-    })
+    this.setState({pagination: pageNumber});
+    // this.setState({pagination: pageNumber}, async () => {
+    //   if (this.shouldLoadMore(direction)) {
+    //     let articles = await this.loadNewArticles();
+    //     articles.sort((a, b) => {
+    //         return a[this.state.sortMethod] > b[this.state.sortMethod] ? 1 : -1; 
+    //     })
+    //     this.setState({articles: [...this.state.articles, ...articles]});
+    //   }
+    // })
   }
   
-  shouldLoadMore = (direction) => {
-    const pageIndex = this.state.pagination - 1
-    const pageGroup = pageIndex / 4 * 100 
-    console.log('what we have,', pageIndex, pageGroup, this.state.articles.length)
-    if (pageIndex % 4 === 0 && direction === 'next' && this.state.articles.length <= pageGroup && this.state.articles.length < 500) {
-      return true;
-    } else {
-      return false;
-    }
-  }
+  // shouldLoadMore = (direction) => {
+  //   const pageIndex = this.state.pagination - 1
+  //   const pageGroup = pageIndex / 4 * 100 
+  //   console.log('what we have,', pageIndex, pageGroup, this.state.articles.length)
+  //   if (pageIndex % 4 === 0 && direction === 'next' && this.state.articles.length <= pageGroup && this.state.articles.length < 500) {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  // }
   
   loadNewArticles = async () => {
     this.setState({loading: true});

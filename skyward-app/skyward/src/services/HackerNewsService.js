@@ -15,10 +15,10 @@ const Api = {
     return makeFetch(url);
   },
   async fetchNewStories(storyIds, pagination) {
-    const lower = pagination === 1 ? 0 : pagination / 5 * 100;
-    const upper = pagination === 1 ? 100 : (pagination / 5 + 1) * 100;
-    const storyIdList = storyIds.slice(lower, upper)
-    console.log('from fetchNewStories', lower, upper, pagination, storyIdList) 
+    // const lower = pagination === 1 ? 0 : pagination / 5 * 100;
+    // const upper = pagination === 1 ? 100 : (pagination / 5 + 1) * 100;
+    const storyIdList = storyIds.slice(0, storyIds.length)
+    // console.log('from fetchNewStories', lower, upper, pagination, storyIdList) 
     const actions = storyIdList.map(this.fetchSingleStory);
     const articles = await Promise.all(actions)
     return articles

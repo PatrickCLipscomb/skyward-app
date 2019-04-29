@@ -100,8 +100,29 @@ body,
 .pagination {
   display: flex;
   justify-content: space-between;
-  
   padding: 15px;
+  
+  button {
+    padding: 4px 7px;
+    background-color: #2196f3;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+    
+    &:hover {
+      cursor: pointer;
+    }
+    
+    &:focus {
+      outline: 0;
+    }
+    
+    &:disabled {
+      cursor: default;
+      color: rgba(0, 0, 0, 0.26);
+      background-color: rgba(0, 0, 0, 0.12);
+    }
+  }
 }
 
 .article {
