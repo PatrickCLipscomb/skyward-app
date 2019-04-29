@@ -39,24 +39,26 @@ class App extends Component {
     // this.setState({pagination: pageNumber}, async () => {
     //   if (this.shouldLoadMore(direction)) {
     //     let articles = await this.loadNewArticles();
-    //     articles.sort((a, b) => {
-    //         return a[this.state.sortMethod] > b[this.state.sortMethod] ? 1 : -1; 
-    //     })
-    //     this.setState({articles: [...this.state.articles, ...articles]});
+    //     // articles.sort((a, b) => {
+    //     //     return a[this.state.sortMethod] > b[this.state.sortMethod] ? 1 : -1; 
+    //     // })
+    //     this.setState({articles: [...this.state.articles, ...articles]}, () => {
+    //       this.sortArticles(this.state.sortMethod)
+    //     });
     //   }
     // })
   }
   
-  // shouldLoadMore = (direction) => {
-  //   const pageIndex = this.state.pagination - 1
-  //   const pageGroup = pageIndex / 4 * 100 
-  //   console.log('what we have,', pageIndex, pageGroup, this.state.articles.length)
-  //   if (pageIndex % 4 === 0 && direction === 'next' && this.state.articles.length <= pageGroup && this.state.articles.length < 500) {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  // }
+  shouldLoadMore = (direction) => {
+    const pageIndex = this.state.pagination - 1
+    const pageGroup = pageIndex / 4 * 100 
+    console.log('what we have,', pageIndex, pageGroup, this.state.articles.length)
+    if (pageIndex % 4 === 0 && direction === 'next' && this.state.articles.length <= pageGroup && this.state.articles.length < 500) {
+      return true;
+    } else {
+      return false;
+    }
+  }
   
   loadNewArticles = async () => {
     this.setState({loading: true});
@@ -70,7 +72,7 @@ class App extends Component {
     stateCopy.sort((a, b) => {
         return a[method] > b[method] ? 1 : -1; 
     })
-    this.setState({articles: stateCopy, sortMethod: method, pagination: 1})
+    this.setState({articles: stateCopy, sortMethod: method})
   }
   
   selectArticle = (index) => {
@@ -82,7 +84,7 @@ class App extends Component {
     return (
       <Router>
         <div className="app">
-          <Header date={'4/25/2019'} />
+          <Header date={'4/30/2019'} />
           <div className="wrapper">
             <Route 
               exact path="/"

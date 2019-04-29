@@ -11,7 +11,7 @@ class Articles extends Component {
   }
   
   componentDidUpdate(prevProps) {
-    if (this.props.pagination !== prevProps.pagination) {
+    if (this.props.pagination !== prevProps.pagination || this.props.articles.length !== prevProps.articles.length) {
       this.currentPage()
       return true;
     }
@@ -19,8 +19,8 @@ class Articles extends Component {
   
   currentPage = () => {
     console.log('currentPage')
-    const lower = this.props.pagination === 1 ? 0 : (this.props.pagination - 1) * 25;
-    const upper = this.props.pagination * 25;
+    const lower = this.props.pagination === 1 ? 0 : (this.props.pagination - 1) * 24;
+    const upper = this.props.pagination * 24;
     this.setState({page: [lower, upper]})
   }
   
@@ -55,8 +55,8 @@ class Articles extends Component {
             </div>
             <div className="pagination">
               <button onClick={() => this.props.paginate('prev')} disabled={this.props.pagination === 1 || this.props.loading}>Prev</button>
-              <p>Page Number {this.props.pagination}</p>
-              <button onClick={() => this.props.paginate('next')} disabled={this.props.pagination === 20 || this.props.loading}>Next</button>
+              <p>Page {this.props.pagination}</p>
+              <button onClick={() => this.props.paginate('next')} disabled={this.props.pagination === 10 || this.props.loading}>Next</button>
             </div>
           </>
       }
