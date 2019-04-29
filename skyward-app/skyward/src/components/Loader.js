@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import rings from './rings.svg';
 
 const Loader = (props) => (
   <div className="loader">
-    Loader Present
+    <img src={rings} className="Loader-img" alt="Loading" />
+    <p>Loading...</p>
   </div>
 );
 

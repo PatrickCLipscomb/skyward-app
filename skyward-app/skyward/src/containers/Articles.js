@@ -55,8 +55,8 @@ class Articles extends Component {
               }
             </div>
             <div className="pagination">
-              <button onClick={() => this.props.paginate('prev')} disabled={this.props.pagination === 1 || this.props.loading}>Previous</button>
-              <button onClick={() => this.props.paginate('next')} disabled={this.props.pagination === 20 || this.props.loading}>Next</button>
+              <button onClick={() => this.props.paginate('prev')} disabled={this.props.pagination === 1 || this.props.loading}>{'<'}</button>
+              <button onClick={() => this.props.paginate('next')} disabled={this.props.pagination === 20 || this.props.loading}>{'>'}</button>
             </div>
           </>
       }

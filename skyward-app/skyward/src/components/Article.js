@@ -12,7 +12,9 @@ const Article = (props) => (
         <p>{props.article.score}</p>
         <p>{props.article.by}</p>
       </div>
-      <Link to={`/articles/${props.index}`} onClick={() => props.selectArticle(props.index)}>See More</Link>
+      <div>
+        <Link to={`/articles/${props.index}`} onClick={() => props.selectArticle(props.index)}>See More</Link>
+      </div>
     </div>  
   </div>
 );
