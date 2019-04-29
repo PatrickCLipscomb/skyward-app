@@ -82,21 +82,17 @@ class App extends Component {
       <Router>
         <div className="app">
           <Header date={'4/25/2019'} />
-          {
-            loading ?
-              <Loader /> :
-              <>
-                <Route 
-                  exact path="/"
-                  render={(props, state) => <Articles articles={articles} pagination={this.state.pagination} sortMethod={this.state.sortMethod} sortArticles={this.sortArticles} selectArticle={this.selectArticle} paginate={this.paginate} loading={loading} /> }
-                />
-                <Route
-                  path="/articles/:index"
-                  render={(props, state) => <ArticleDetails article={articles[this.state.selectedArticle]} />}
-                />
-                <Route path="/about" component={About} />
-              </>
-          }
+          <div className="wrapper">
+            <Route 
+              exact path="/"
+              render={(props, state) => <Articles articles={articles} pagination={this.state.pagination} sortMethod={this.state.sortMethod} sortArticles={this.sortArticles} selectArticle={this.selectArticle} paginate={this.paginate} loading={loading} /> }
+            />
+            <Route
+              path="/articles/:index"
+              render={(props, state) => <ArticleDetails article={articles[this.state.selectedArticle]} />}
+            />
+            <Route path="/about" component={About} />
+          </div>
           <Footer />
         </div>
       </Router>

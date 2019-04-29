@@ -32,7 +32,7 @@ class Articles extends Component {
   render() {
     this.props.articles.forEach((article) => console.log(article.score))
     return (
-      <div className="wrapper">
+      <div className="">
         {
           
             this.props.loading ?
