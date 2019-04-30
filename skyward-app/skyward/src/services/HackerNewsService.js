@@ -23,7 +23,7 @@ const Api = {
   async fetchNewStories(storyIds, pagination) {
     // const lower = pagination === 1 ? 0 : pagination / 5 * 100;
     // const upper = pagination === 1 ? 100 : (pagination / 5 + 1) * 100;
-    const storyIdList = storyIds.slice(0, 239)
+    const storyIdList = storyIds.slice(0, 240)
     // console.log('from fetchNewStories', lower, upper, pagination, storyIdList) 
     const actions = storyIdList.map(this.fetchSingleStory);
     const articles = await Promise.all(actions)

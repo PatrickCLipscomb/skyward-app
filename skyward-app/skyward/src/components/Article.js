@@ -8,12 +8,12 @@ const Article = (props) => (
       <div className="meta">
         <p className="primary">{props.article.title}</p>
       </div>
-      <div className="secondary">
-        <p>{props.article.score}</p>
-        <p>{props.article.by}</p>
-      </div>
-      <div>
-        <Link to={`/articles/${props.index}`} onClick={() => props.selectArticle(props.index)}>See More</Link>
+      <div className="meta-info">
+        <Link to={`/articles/${props.index}`} onClick={() => props.selectArticle(props.index)}>Learn More</Link>
+        <div>
+          <p>Author: {props.article.by}</p>
+          <p>Score: {props.article.score}</p>
+        </div>
       </div>
     </div>  
   </div>

@@ -149,6 +149,8 @@ body,
   a {
     text-transform: uppercase;
     text-decoration: none;
+    font-size: 12px;
+    min-width: 80px;
     
     &:hover {
       background-color: rgba(0, 0, 0, 0.08);
@@ -163,6 +165,21 @@ body,
     
     @media (max-width: 768px){
       margin-left: 15px;
+    }
+    
+    .meta-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-top: 10px;
+      
+      p {
+        font-size: 12px;
+      }
+      
+      div {
+        text-align: right;
+      }
     }
     
     .meta {

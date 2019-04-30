@@ -7,6 +7,7 @@ const ArticleDetails = (props) => (
     <div className="secondary">
       <p>Score: {props.article.score}</p>
       <p>Author: {props.article.by}</p>
+      <p>Date: {new Date(props.article.time).toDateString()}</p>
     </div>
     <a href={props.article.url} target="_blank">View Story</a>
   </div>

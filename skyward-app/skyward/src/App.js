@@ -8,8 +8,7 @@ import About from './components/About';
 import NotFound from './components/NotFound';
 import ArticleDetails from './components/ArticleDetails';
 import Api from './services/HackerNewsService.js';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { withRouter } from 'react-router'
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import './App.scss';
 
 class App extends Component {
@@ -54,16 +53,16 @@ class App extends Component {
     // })
   }
   
-  shouldLoadMore = (direction) => {
-    const pageIndex = this.state.pagination - 1
-    const pageGroup = pageIndex / 4 * 100 
-    console.log('what we have,', pageIndex, pageGroup, this.state.articles.length)
-    if (pageIndex % 4 === 0 && direction === 'next' && this.state.articles.length <= pageGroup && this.state.articles.length < 500) {
-      return true;
-    } else {
-      return false;
-    }
-  }
+  // shouldLoadMore = (direction) => {
+  //   const pageIndex = this.state.pagination - 1
+  //   const pageGroup = pageIndex / 4 * 100 
+  //   console.log('what we have,', pageIndex, pageGroup, this.state.articles.length)
+  //   if (pageIndex % 4 === 0 && direction === 'next' && this.state.articles.length <= pageGroup && this.state.articles.length < 500) {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  // }
   
   loadNewArticles = async () => {
     this.setState({loading: true});
@@ -91,16 +90,18 @@ class App extends Component {
         <div className="app">
           <Header date={'4/30/2019'} />
           <div className="wrapper">
-            <Route 
-              exact path="/"
-              render={(props, state) => <Articles articles={articles} pagination={this.state.pagination} sortMethod={this.state.sortMethod} sortArticles={this.sortArticles} selectArticle={this.selectArticle} paginate={this.paginate} loading={loading} /> }
-            />
-            <Route
-              path="/articles/:index"
-              render={(props, state) => <ArticleDetails article={articles[this.state.selectedArticle]} />}
-            />
-            <Route path="/about" component={About} />
-            <Route path="/not-found" component={NotFound} />
+            <Switch>
+              <Route 
+                exact path="/"
+                render={(props, state) => <Articles articles={articles} pagination={this.state.pagination} sortMethod={this.state.sortMethod} sortArticles={this.sortArticles} selectArticle={this.selectArticle} paginate={this.paginate} loading={loading} /> }
+              />
+              <Route
+                path="/articles/:index"
+                render={(props, state) => <ArticleDetails article={articles[this.state.selectedArticle]} />}
+              />
+              <Route path="/about" component={About} />
+              <Route path="*" component={NotFound} />
+            </Switch>
           </div>
           <Footer />
         </div>
