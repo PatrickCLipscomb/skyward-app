@@ -1,4 +1,4 @@
-import history from '../history';
+import { history } from '../App';
 const HN_URL = 'https://hacker-news.firebaseio.com/v0';
 
 const makeFetch = async (url) => {
@@ -20,8 +20,8 @@ const Api = {
     const url = `/item/${id}.json`;
     return makeFetch(url);
   },
-  async fetchNewStories(storyIds, pagination) {
-    const storyIdList = storyIds.slice(0, 240)
+  async fetchNewStories(storyIds, count) {
+    const storyIdList = storyIds.slice(count, count + 50)
     const actions = storyIdList.map(this.fetchSingleStory);
     const articles = await Promise.all(actions)
     return articles

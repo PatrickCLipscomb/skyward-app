@@ -8,8 +8,11 @@ import About from './components/About';
 import NotFound from './components/NotFound';
 import ArticleDetails from './components/ArticleDetails';
 import Api from './services/HackerNewsService.js';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { Router, Route, Link, Switch } from "react-router-dom";
 import './App.scss';
+import createHistory from 'history/createBrowserHistory';
+
+export const history = createHistory();
 
 class App extends Component {
   state = {
@@ -17,7 +20,7 @@ class App extends Component {
     articles: [],
     pagination: 1,
     articleIds: [],
-    sortMethod: 'time',
+    sortMethod: 'by',
     selectedArticle: null
   }
   
@@ -26,11 +29,16 @@ class App extends Component {
     const articleIds = await Api.fetchNewStoryIDs();
     this.setState({articleIds}, async () => {
       if (articleIds) {
-        const articles = await this.loadNewArticles();
-        this.setState({articles}, () => {
-          this.sortArticles(this.state.sortMethod)
-        })
-        console.log(articles)
+        let count = 0;
+        while (count < (articleIds.length - 1)) {
+          const articles = await this.loadNewArticles(count);
+          let articlesCopy = this.state.articles
+          articlesCopy.push(...articles)
+          this.setState({articles: articlesCopy}, () => {
+            this.sortArticles(this.state.sortMethod)
+          })
+          count += 50
+        }
       } else {
         this.setState({loading: false});
       }
@@ -42,9 +50,8 @@ class App extends Component {
     this.setState({pagination: pageNumber});
   }
   
-  loadNewArticles = async () => {
-    this.setState({loading: true});
-    const articles = await Api.fetchNewStories(this.state.articleIds, this.state.pagination)
+  loadNewArticles = async (count) => {
+    const articles = await Api.fetchNewStories(this.state.articleIds, count)
     this.setState({loading: false});
     return articles
   }
@@ -52,7 +59,26 @@ class App extends Component {
   sortArticles = (method) => {
     let stateCopy = this.state.articles
     stateCopy.sort((a, b) => {
-        return a[method] > b[method] ? 1 : -1; 
+      if (method === 'by') {
+        if (!isNaN(a.by.charAt(0)) && isNaN(b.by.charAt(0))) {
+          return 1
+        } else if (!isNaN(b.by.charAt(0)) && isNaN(a.by.charAt(0))) {
+          return -1
+        } else {
+          return a.by > b.by ? 1 : -1;
+        }
+      } else if (method === 'score') {
+        return a.score > b.score ? 
+          1 : 
+          (a.score === b.score ?
+            (a.time > b.time ?
+              -1 :
+              1) :
+            -1)
+      } else {
+        return a[method] > b[method] ? 1 : -1;
+      }
+         
     })
     this.setState({articles: stateCopy, sortMethod: method})
   }
@@ -64,7 +90,7 @@ class App extends Component {
   render() {
     const { articles, loading } = this.state;
     return (
-      <Router>
+      <Router history={history}>
         <div className="app">
           <Header date={'4/30/2019'} />
           <div className="wrapper">

@@ -6,7 +6,7 @@ import Loader from '../components/Loader'
 class Articles extends Component {
   state = {
     sortedBy: 'time',
-    page: [0, 25],
+    page: [0, 24],
     sortMethod: this.props.sortMethod
   }
   
@@ -33,32 +33,32 @@ class Articles extends Component {
     return (
       <div className="">
         {
-          
-            this.props.loading ?
-              <Loader /> :
-        
-          <>
-            <div className="sort">
-              <span>Sort By: </span>
-              <select id="lang" onChange={this.handleChange} value={this.state.sortMethod}>
-                  <option value="time">Time</option>
-                  <option value="score">Score</option>
-                  <option value="by">Author</option>
-              </select>
-            </div>
-            <div className="articles">
-              {
-                this.props.articles
-                  .slice(this.state.page[0], this.state.page[1])
-                  .map((article, index) => <Article article={article} key={index} index={index} selectArticle={this.props.selectArticle} />)
-              }
-            </div>
-            <div className="pagination">
-              <button onClick={() => this.props.paginate('prev')} disabled={this.props.pagination === 1 || this.props.loading}>Prev</button>
-              <p>Page {this.props.pagination}</p>
-              <button onClick={() => this.props.paginate('next')} disabled={this.props.pagination === 10 || this.props.loading}>Next</button>
-            </div>
-          </>
+        this.props.loading ?
+          <Loader /> :
+            this.props.articles.length ?
+              <>
+                <div className="sort">
+                  <span>Sort By: </span>
+                  <select id="lang" onChange={this.handleChange} value={this.state.sortMethod}>
+                      <option value="time">Time</option>
+                      <option value="score">Score</option>
+                      <option value="by">Author</option>
+                  </select>
+                </div>
+                <div className="articles">
+                  {
+                    this.props.articles
+                      .slice(this.state.page[0], this.state.page[1])
+                      .map((article, index) => <Article article={article} key={index} index={index} selectArticle={this.props.selectArticle} />)
+                  }
+                </div>
+                <div className="pagination">
+                  <button onClick={() => this.props.paginate('prev')} disabled={this.props.pagination === 1 || this.props.loading}>Prev</button>
+                  <p>Page {this.props.pagination} of {Math.ceil(this.props.articles.length / 24)}</p>
+                  <button onClick={() => this.props.paginate('next')} disabled={this.props.pagination === Math.ceil(this.props.articles.length / 24) || this.props.loading}>Next</button>
+                </div>
+              </> :
+              <p>No Stories Have been loaded</p>
       }
       </div>
     )
